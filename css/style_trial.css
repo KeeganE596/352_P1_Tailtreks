@@ -52,7 +52,7 @@ html, body {
 }
 
 .aim {
-	width: 50%;
+	width: 49%;
 	margin: 100px auto;
 	text-align: justify;
 	line-height: 1.4;
@@ -114,8 +114,8 @@ footer {
 #footerText {
 	color: #333333;
 	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
@@ -125,7 +125,12 @@ footer {
 	}
 
 	.container {
+		width: 60%;
 		flex-direction: column;
+	}
+
+	.aim {
+		width: 59%;
 	}
 
 	.textBlock {
@@ -151,11 +156,11 @@ footer {
 	}
 
 	.mockupImg {
-		width: 50%;
-		height: 50%;
+		width: 60%;
+		height: 60%;
 		margin-bottom: 50px;
-		margin-left: 25%;
-		margin-right: 25%;
+		margin-left: 20%;
+		margin-right: 20%;
 	}
 }
 
@@ -165,7 +170,12 @@ footer {
 	}
 
 	.container {
+		width: 70%;
 		flex-direction: column;
+	}
+
+	.aim {
+		width: 69%;
 	}
 
 	.textBlock {
