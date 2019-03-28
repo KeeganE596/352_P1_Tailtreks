@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tailtreks</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/style_trial.css">
+  <!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/pawOrangeIcon.png">
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3n54OXCbbKXpoaZ7S5xSImEkqNE_KV_A&callback=initMap">
+  </script>
+  <script type="text/javascript">
+    function initialize() {
+      var mapOptions = {
+        center: {lat: -41.2865, lng: 174.7762},
+        zoom: 14,
+        styles: [
+          {
+            featureType: "poi",
+            elementType: "labels",
+            stylers: [ {"visibility": "off"} ]
+          }, {
+            featureType: "poi.park",
+            elementType: "labels",
+            stylers: [ {"visibility": "on"} ]
+          }, {
+            featureType: "road.highway",
+            elementType: "labels.icon",
+            stylers: [ {"visibility": "off"} ],
+          }, {
+            featureType: "transit.station.bus",
+            elementType: "labels",
+            stylers: [ {"visibility": "off"} ]
+          }, {
+            featureType: "transit.station.rail",
+            elementType: "labels",
+            stylers: [ {"visibility": "off"} ]
+          }
+        ]
+      };
+      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    }
+  </script>
+</head>
+
+<body onload="initialize()">
+  <div class="titleBox">
+    <img src="images/logoWebCoverStroke.png" id="mainLogo">
+  </div>
+  
+
+  <!--<div class="line"></div>-->
+
+  <div class="aim"><strong>ABOUT</strong><br>Tailtreks aims to help you find great parks and tracks for you and you're furry friends. Available on any device through our web app, find detailed information on the best places to take your dogs and areas to stay away from via the clean and easy to use interface. Whether you're out of town trying to navigate a new city or looking for fresh places to go at home, Tailtreks with help you find the best spots to walk your dogs no matter where you are.</div>
+
+  <div class="container" >
+    <div class="textBlock">
+      <strong>TECHNICAL CONSIDERATIONS</strong><br>Tailtreks will be built as a web app so that it can be used on as many devices as possible. It will utilise the Google Maps API to accurately locate parks and tracks in the area, users can then add reviews, notes or fill out quick questionnaires to add further information to each place so that we can deliver necessary information in an easily accessible web-app.<br><br>As it will be built as a web app it will use HTML5, CSS3 and JavaScript components. The Maps API allows for full customization of the map; labels and points of interest can be turned on or off, all the colours can be changed and custom markers can be used so it can be fully tuned to the design language of the tailtreks web app.</div>
+    <div class="imageBlock"> <div id="map"></div> </div> 
+  </div>
+
+  <div class="container" >
+    <div class="imageBlock" id="iconsImg"> 
+      <img src="images/bars.png" class="setImg"> 
+      <img src="images/iconsNew.png" class="setImg"> 
+      <img src="images/markersNew.png" class="setImg"> 
+    </div> 
+    <div class="textBlock" id="designText">
+      <strong>DESIGN</strong><br>I would like to keep the design elements simple and fun, using rounded edges keeps the look friendly and the three main bright colours keeps the design uncluttered and undistracting but still fun.<br><br>The main font-face will be <i>Metropolis</i>, a geometric, modern and simple sans-serif font, it is flexible having many different weights and is very readable.</div>
+  </div>
+
+  <div class="container">
+    <img src="images/splashMock_mapDark.png" class="mockupImg">
+    <img src="images/mainMock.png" class="mockupImg">
+  </div>
+  <div class="container"> 
+    <img src="images/parkMock.png" class="mockupImg">
+    <img src="images/questionMock.png" class="mockupImg">
+  </div>
+
+  <footer>
+    <div id="footerText">Keegan Edwards | Tailtreks | MDDN 352 | 2019</div>
+  </footer>
+</body>
+
+</html>
